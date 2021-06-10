@@ -1,0 +1,131 @@
+/*
+  font-family: "D-DIN-bold";
+  font-family: "D-DIN-regular";
+*/
+
+/* Default CSS Here*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "D-DIN-regular";
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container CSS Start */
+.container {
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 255, 88, 0.25),
+    rgba(1, 157, 255, 0.25)
+  );
+}
+
+.card {
+  margin: 10px;
+  width: 32rem;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-top{
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 35, 118, 0.25) 0%,
+    rgba(255, 35, 118,  0.25) 10%,
+    rgba(255, 143, 151, 0.25)
+  );
+}
+
+.card-top-heading {
+  background-size: cover;
+  background: url("images/red-bg.png"),   linear-gradient(180deg, rgba(254, 144, 153, 1) 0%, rgba(254, 30, 119, 1) 60.0%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  color: #fff;
+  padding: 8rem 0rem;
+}
+
+.card-top-heading-title {
+  text-transform: uppercase;
+  font-family: "D-DIN-bold";
+  font-size: 4.6rem;
+  margin-bottom: 0.2em;
+}
+
+.card-top-heading-paragraph {
+  font-size: 1.2rem;
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.card-top-pricing {
+  font-size: 8rem;
+  color: #D64F7A;
+  padding: 2rem 0 4rem 0;
+  font-family: "D-DIN-bold";
+}
+
+.card-bottom{
+  font-size: 1.8rem;
+  padding:2rem;
+}
+
+.card-bottom-info{
+    display: flex;
+    color: #474747;
+    justify-content: center;
+    align-items: center;
+}
+.card-bottom-info:not(:last-child){
+    margin-bottom: 1rem;
+}
+.card-bottom-info-check{
+  filter: invert(66%) sepia(60%) saturate(5167%) hue-rotate(78deg) brightness(129%) contrast(117%);
+}
+
+.card-bottom-info-cross{
+  filter: invert(47%) sepia(30%) saturate(5682%) hue-rotate(322deg) brightness(101%) contrast(121%);
+}
+
+.card-bottom-info-heading{
+  margin-left: 1rem;
+}
+
+.card-bottom-button{
+  background: linear-gradient(
+    125deg,
+    rgba(255, 35, 118, 1) 0%,
+    rgba(255, 35, 118,  1) 10%,
+    rgba(255, 143, 151, 1)
+  );
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "D-DIN-bold";
+  margin-top: 1.5rem;
+}

@@ -19,6 +19,10 @@ html {
 
 body {
   font-family: "D-DIN-regular";
+  height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 img {
